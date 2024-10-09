@@ -1,0 +1,66 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "json"
+require "httparty"
+require "table_print"
+require "csv"
+
+cookie = {
+  "sessionid" => ENV["MOBILIZE_SESSION_ID"],
+}
+
+event_list = {
+  manhattan_harlem: 702662,
+  manhattan_midtown_east: 719201,
+  brooklyn: 702683,
+  queens_east: 702688,
+  queens_lic: 720489,
+  queens_spanish: 720748,
+  queens_rochdale: 720751,
+  bronx_coop_city: 720476,
+  bronx_south: 705124,
+  buffalo: 711936,
+  rochester: 711948,
+  binghamton: 711955,
+  manhattan_upperwestside: 711959,
+}
+
+result = {}
+
+
+event_list.each do |location, id|
+  puts "Fetching #{location}..."
+  url = "https://events.democrats.org/dashboard/event/#{id}/"
+  html = HTTParty.get(url, cookies: cookie)
+
+  data = html.split("\n").grep(/window.__MLZ_EMBEDDED_DATA__/)[0].split("=", 2)[1][..-2]
+  json = JSON.parse(data)
+
+  result[location] = {}
+  json['data']['timeslots'].each do |t|
+    date = t['starts_at_tz'][..9]
+    result[location][date] = t['participant_count']['registered_count'] + t['participant_count']['confirmed_count']
+  end
+end
+
+
+dates = result.values.map{|i| i.keys}.flatten.sort.uniq
+output = [["Location"].concat(dates)]
+
+result.each do |location, count_data|
+  row = []
+  row << location
+  dates.each do |dt|
+    count = count_data[dt]
+    count = 0 if count.nil?
+    row << count.to_s
+  end
+  output << row
+end
+
+CSV.open("bus-counts.csv", "w") do |csv|
+  output.each do |row|
+    csv << row
+  end
+end
