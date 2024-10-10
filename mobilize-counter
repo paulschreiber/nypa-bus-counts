@@ -4,10 +4,6 @@
 require "json"
 require "httparty"
 require "csv"
-require "google/apis/sheets_v4"
-
-client = Google::Apis::SheetsV4::SheetsService.new
-client.authorization
 
 cookie = {
   "sessionid" => ENV["MOBILIZE_SESSION_ID"],
