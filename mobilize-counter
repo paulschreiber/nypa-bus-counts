@@ -23,6 +23,7 @@ event_list = {
   rochester: 711948,
   binghamton: 711955,
   manhattan_upperwestside: 711959,
+  albany: 719058,
   westchester: 721325,
 }
 
