@@ -6,10 +6,10 @@ queens_east,0,59,0,42,0,14,9,5,3
 queens_lic,10,7,0,3,2,3,5,1,0
 queens_spanish,0,7,0,4,0,0,0,0,0
 queens_rochdale,0,3,0,0,0,0,0,0,0
-queens_forest_hills,0,16,0,2,0,0,2,0,1
+queens_forest_hills,0,15,0,2,0,0,2,0,1
 bronx_coop_city,0,9,0,3,0,4,3,0,0
 bronx_south,0,35,4,27,1,7,3,6,5
-buffalo,0,24,0,22,0,14,10,5,4
+buffalo,0,25,0,22,0,14,10,5,4
 rochester,0,29,0,27,0,27,9,5,7
 binghamton,0,18,0,13,0,0,0,0,0
 manhattan_upperwestside,121,0,120,0,93,0,43,13,13
