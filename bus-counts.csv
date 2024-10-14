@@ -7,7 +7,7 @@ queens_lic,9,0,3,2,3,5,1,0
 queens_spanish,8,0,4,0,0,0,0,0
 queens_rochdale,4,0,0,0,0,0,0,0
 queens_forest_hills,16,0,2,0,0,2,0,1
-bronx_coop_city,11,0,4,0,4,3,0,0
+bronx_coop_city,12,0,5,0,5,4,1,1
 bronx_south,41,5,27,1,7,3,6,5
 buffalo,26,0,24,0,15,11,6,5
 rochester,35,0,28,0,28,12,5,7
