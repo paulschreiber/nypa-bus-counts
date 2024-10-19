@@ -1,13 +1,13 @@
 Location,2024-10-19,2024-10-20,2024-10-26,2024-10-27,2024-11-02,2024-11-03,2024-11-04,2024-11-05
 manhattan_harlem,172,0,123,0,51,32,14,9
-manhattan_midtown_east,118,0,120,0,67,30,30,17
-brooklyn,300,206,241,140,158,91,58,42
+manhattan_midtown_east,116,0,120,0,67,30,30,17
+brooklyn,300,206,242,140,158,91,58,42
 queens_east,74,0,58,0,30,22,12,5
-queens_lic,59,0,15,8,12,11,7,6
+queens_lic,59,0,16,8,12,11,7,6
 queens_spanish,30,0,15,0,0,0,0,0
 queens_rochdale,31,0,0,0,0,0,0,0
 queens_forest_hills,52,0,24,0,10,7,1,2
-bronx_coop_city,30,0,14,0,10,10,3,5
+bronx_coop_city,28,0,14,0,10,10,3,5
 bronx_south,47,0,36,0,13,6,7,6
 buffalo,49,0,33,0,24,21,11,7
 rochester,65,0,51,0,45,25,12,9
