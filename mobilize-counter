@@ -12,24 +12,26 @@ cookie = {
 event_list = {
   manhattan_harlem: 702662,
   manhattan_midtown_east: 719201,
+  manhattan_upperwestside: 711959,
+  mnahtatan_tribeca: 713389,
   brooklyn: 702683,
   queens_east: 702688,
   queens_lic: 720489,
   queens_spanish: 720748,
-  queens_rochdale: 720751,
   queens_forest_hills: 721043,
   bronx_coop_city: 720476,
   bronx_south: 705124,
+  bronx_riverdale: 730205,
+  staten_island: 727275,
+  albany: 719058,
+  binghamton: 711955,
   buffalo: 711936,
   rochester: 711948,
-  binghamton: 711955,
-  manhattan_upperwestside: 711959,
-  albany: 719058,
   westchester: 721325,
 }
 
 result = {}
-
+totals = {}
 
 event_list.each do |location, id|
   puts "Fetching #{location}..."
@@ -43,6 +45,8 @@ event_list.each do |location, id|
   json['data']['timeslots'].each do |t|
     date = t['starts_at_tz'][..9]
     result[location][date] = t['participant_count']['registered_count'] + t['participant_count']['confirmed_count']
+    totals[date] = 0 if totals[date].nil?
+    totals[date] += result[location][date]
   end
 end
 
@@ -60,6 +64,12 @@ result.each do |location, count_data|
   end
   output << row
 end
+
+row = ["Total"]
+totals.each do |date, count_data|
+  row << count_data
+end
+output << row
 
 CSV.open("bus-counts.csv", "w") do |csv|
   output.each do |row|
