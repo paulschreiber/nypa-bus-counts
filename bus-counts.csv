@@ -3,7 +3,7 @@ manhattan_harlem,190,0,96,54,28,17
 manhattan_midtown_east,248,0,124,54,40,27
 manhattan_upperwestside,0,391,0,174,61,41
 mnahtatan_tribeca,0,233,170,146,114,64
-brooklyn,458,398,342,218,130,80
+brooklyn,459,399,344,220,130,80
 queens_east,82,0,43,39,15,8
 queens_lic,59,34,15,19,6,6
 queens_spanish,33,0,0,0,0,0
@@ -17,4 +17,4 @@ binghamton,33,0,3,2,0,0
 buffalo,53,0,32,29,15,9
 rochester,85,1,64,32,16,15
 westchester,178,0,111,0,0,0
-Total,1603,1047,803,447,288,1151
+Total,1604,1049,805,447,288,1152
