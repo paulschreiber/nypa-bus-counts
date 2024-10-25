@@ -5,9 +5,9 @@ manhattan_upperwestside,0,430,0,189,61,41
 mnahtatan_tribeca,0,260,182,164,125,64
 brooklyn,481,455,378,239,142,85
 queens_east,70,0,42,38,12,6
-queens_lic,59,37,15,18,4,5
-queens_spanish,29,0,0,0,0,0
-queens_forest_hills,46,0,21,12,7,6
+queens_lic,60,37,15,18,4,5
+queens_spanish,28,0,0,0,0,0
+queens_forest_hills,45,0,21,12,7,6
 bronx_coop_city,30,0,13,18,6,6
 bronx_south,37,0,17,9,10,9
 bronx_riverdale,42,0,0,0,0,0
@@ -17,4 +17,4 @@ binghamton,38,0,6,4,1,1
 buffalo,54,0,32,29,15,10
 rochester,86,1,68,33,17,15
 westchester,174,0,121,0,0,0
-Total,1624,1133,875,468,292,1293
+Total,1623,1133,875,468,292,1293
