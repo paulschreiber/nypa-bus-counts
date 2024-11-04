@@ -1,8 +1,8 @@
 Location,2024-11-04,2024-11-05
 manhattan_midtown_east,0,0
 manhattan_upperwestside,0,0
-manhattan_tribeca,289,219
-brooklyn,307,246
+manhattan_tribeca,289,224
+brooklyn,307,251
 queens_east,0,0
 queens_forest_hills,0,0
 bronx_coop_city,0,0
@@ -11,4 +11,4 @@ bronx_riverdale,0,0
 binghamton,0,0
 buffalo,25,21
 rochester,35,25
-Total,656,511
+Total,656,521
